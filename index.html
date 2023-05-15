@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator By Atiqa Pasha</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="result" placeholder="0" />
+
+            <div>
+                <button class="button operator" onclick="getNum('&#40;')">&#40;</button>
+                <button class="button operator" onclick="getNum('&#41;')">&#41;</button>
+                <button class="button operator" onclick="getNum('Math.sin')">Sin</button>
+                <button class="button operator" onclick="getNum('Math.cos')">Cos</button>
+                <button class="button operator" onclick="getNum('Math.tan')">Tan</button>
+                <button class="button operator" onclick="getNum('Math.PI')">Pi</button>
+
+
+            </div>
+
+            <div>
+                <button class="button  DEL" onclick="removeNum()">DEL</button>
+                <button class="button operator" onclick="getNum('Math.LN2')">LN2</button>
+                <button class="button operator" onclick="getNum('Math.LN10')">LN10</button>
+                <button class="button operator" onclick="getNum('Math.log2')">LOG2</button>
+                <button class="button operator" onclick="getNum('Math.log10')">LOG10</button>
+                <button class="button operator" onclick="getNum('Math.sqrt')">SQRT</button>
+
+
+            </div>
+
+
+
+            <div>
+                <button class="button" onclick="getNum('7')">7</button>
+                <button class="button" onclick="getNum('8')">8</button>
+                <button class="button" onclick="getNum('9')">9</button>
+                <button class="button operator" onclick="getNum('*')">*</button>
+                <button class="button  DEL" onclick="clearNum()">AC</button>
+                <button class="button operator" onclick="getNum('Math.sqrt')">SQRT</button>
+
+            </div>
+            <div>
+                <button class="button" onclick="getNum('4')">4</button>
+                <button class="button" onclick="getNum('5')">5</button>
+                <button class="button" onclick="getNum('6')">6</button>
+                <button class="button operator " onclick="getNum('-')">-</button>
+                <button class="button operator" onclick="getNum('Math.min')">MIN</button>
+                <button class="button operator" onclick="getNum('Math.max')">MAX</button>
+            </div>
+            <div>
+                <button class="button" onclick="getNum('1')">1</button>
+                <button class="button" onclick="getNum('2')">2</button>
+                <button class="button" onclick="getNum('2')">3</button>
+                <button class="button operator" onclick="getNum('+')">+</button>
+                <button class="button operator" onclick="getNum('Math.log')">LOG</button>
+                <button class="button operator" onclick="getNum('Math.exp')">EXP</button>
+                
+            </div>
+
+            <div>
+                <button class="button" onclick="getNum('00')">00</button>
+                <button class="button" onclick="getNum('0')">0</button>
+                <button class="button" onclick="getNum('.')">.</button>
+                <button class="button equalBtn" onclick="getResults('=')">=</button>
+                <button class="button operator" onclick="getNum('Math.pow')">POW</button>
+                <button class="button operator" onclick="getNum('Math.cbrt')">CBRT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
